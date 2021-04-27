@@ -4,12 +4,5 @@ services:
         build:
             context: ./
             dockerfile: ./Dockerfile
-        config:
-            - bot_config
-        volume:
-            ./data:./data
-
-
-configs:
-    bot_config:
-        file: ./config.json
+        volumes:
+            - ./data:/srv/lyon_i_nator/data

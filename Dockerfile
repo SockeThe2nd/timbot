@@ -16,4 +16,4 @@ COPY ./ .
 # COPY build node_modules from build-container
 COPY  --from=build-env /srv/lyon_i_nator/node_modules ./node_modules
 
-CMD [ "node", "release/index.js" ]
+CMD [ "node", "index.js" ]
